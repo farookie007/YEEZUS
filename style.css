@@ -1,6 +1,5 @@
 @import url(//db.onlinewebfonts.com/c/4d6aeef29c4c70c6227ad86b5371f8e9?family=T-Star);
-@import url(//db.onlinewebfonts.com/c/4d6aeef29c4c70c6227ad86b5371f8e9?family=nunito);
-/* @import url('http://fonts.cdnfonts.com/css/nunito'); */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
 
 
 :root {
@@ -76,7 +75,7 @@ li {
 }
 
 #nav-links {
-    --font-fam: "nunito";
+    --font-fam: 'Nunito Sans';
     font-family: var(--font-fam, sans-serif);
     display:flex;
     width: 50%;
