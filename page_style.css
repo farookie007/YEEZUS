@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 80%;
+    margin: auto;    
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+header > h2 {
+    margin: 5px 20px;
+}
+
+main {
+    display: flex;
+}
+
+#left-bar {
+    width: 25%;
+    height: 100vh;
+    background-color: antiquewhite;
+}
+#right-bar {
+    height: 100vh;
+    width: 75%;
+    background-color: lightblue;
+}
