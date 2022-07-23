@@ -115,13 +115,19 @@ hr {
     text-align: center;
     padding: 70px 0;
 }
-
+.more {
+    text-align: right;
+}
+.more a {
+    color: var(--dark-brown);
+    text-decoration: underline;
+    font-size: 0.8em;
+}
 
 #yeezus {
     font-size: 4em;
     letter-spacing: 0.4em;
     color: var(--dark-brown);
-    color: 
 }
 #born-again {
     font-size: 2.5em;
@@ -160,8 +166,7 @@ hr {
 #brands {
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    margin: 4em 0;
+    justify-content: space-between;
 }
 #brands img {
     height: 8em;
@@ -175,28 +180,51 @@ main {
     letter-spacing: 0.4em;
 }
 
-.sub-header + img {
-    width: fit-content;
-}
 .sub-header + p {
     color: var(--dark-brown);
     letter-spacing: 0.3em;
 }
-#heading p {
+
+#heading-underline {
+    width: 28em;
+}
+
+#gallery #heading, #merchandise #heading {
+    text-align: center;
+}
+#gallery .sub-header {
+    letter-spacing: 0.3em;
+}
+#gallery-underline {
+    width: 40em;
+}
+
+main > div {
+    margin: 3em auto 10em;
+}
+.sub-header + img + p {
     color: var(--dark-brown);
+}
+blockquote::before, blockquote::after{
+    content: '"';
+}
+
+#gallery .artiste-intro {
+    margin-bottom: 8em;
 }
 
 .artiste-intro {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    margin: 8em auto;
+    margin: 7em auto 3em;
 }
-.artiste-intro:nth-child(odd) {
+.artiste-intro:nth-child(even) {
     flex-direction: row-reverse;
 }
 
 .artiste-intro img {
-    width: 35%;
+    width: 40%;
     height: auto;
     border-width: 1px;
     border-style: solid;
@@ -223,6 +251,76 @@ main {
 .artiste-name::before {
     content: "|";
     color: var(--dark-brown);
-
 }
+
+#gallery-imgs {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 4em 0;
+    text-align: center;
+}
+.gallery-img {
+    width: 45%;
+    display: flex;
+    padding: 0 1em;
+}
+.gallery-img:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.serial-no {
+    width: fit-content;
+    letter-spacing: 0.4em;
+    color: var(--dark-brown);
+    font-size: 1.3em;
+    padding: 0 4px;
+}
+.serial-no::before{
+    content: "'";
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(180deg, rgba(120, 85, 44, 0.75) 0%, rgba(192, 192, 192, 0.6) 100%) 1;
+}
+
+figcaption {
+    letter-spacing: 0.8em;
+    color: #fff;
+    font-size: 1.1em;
+    margin: 2em 0 0;
+}
+#merchs figcaption {
+    text-align: center
+}
+
+#section-merchs {
+    display: ;
+}
+.merch {
+    display: flex;
+    justify-content: space-around;
+}
+.merch img {
+    width: 40%;
+    height: auto;
+}
+.price {
+    font-size: 2em;
+    color: var(--dark-brown);
+}
+
+#merchs button {
+    padding: 1em 2em;
+    color: var(--font-color);
+    background-color: var(--bg-color);
+    border: 2px solid var(--dark-brown);
+    border-radius: 2px;
+}
+
+
+
 
