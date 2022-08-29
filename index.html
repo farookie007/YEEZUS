@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS files -->
     <link rel="stylesheet" href="./style.css">
-    
+
     <title>YZY - Out of this World</title>
 </head>
+
 <body>
     <div id="wrapper">
         <header>
@@ -17,7 +19,7 @@
                 <ul class="nav-links">
                     <li><a href="./index.html" id="home">Home</a></li>
                     <li><a href="#">Artist</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Blo g</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">About</a></li>
                 </ul>
@@ -29,7 +31,7 @@
                     <h2 id="born-again">BORN AGAIN</h2>
                     <h4 id="szn-2">(SZN 2)</h4>
                     <button id="get-ticket">GET TICKET</button>
-    
+
                     <ul id="planets">
                         <li><img src="./images/logos/location-svg.svg" alt="location-icon" class="icon"> MARS</li>
                         <li><img src="./images/logos/location-svg.svg" alt="location-icon" class="icon"> EARTH</li>
@@ -39,11 +41,11 @@
             </div>
             <div id="header-bottom">
                 <p>Is your planet ready for the second coming?</p>
-                <img src="images/logos/stroke.png" alt="underline">
+                <img src="images/logos/stroke.png" alt="underline" class="underline">
             </div>
         </header>
-    
-        
+
+
         <main>
             <div id="brands">
                 <img src="./images/logos/adidas.svg" alt="Adidas Brand logo">
@@ -52,16 +54,26 @@
                 <img src="./images/logos/reebok.svg" alt="Reebok Brand logo">
             </div>
 
-            <div id="heading">
-                <h2 class="sub-header">PERFORMING ARTISTES.</h2>
-                <img id="heading-underline" src="images/logos/stroke.png" alt="underline">
+            <div id="heading" class="relative">
+                <!-- The Background effects -->
+                <img src="./images/bg-dotted.png" alt="#" class="decor" id="perf-decor">
+                <!-- End -->
 
+                <h2 class="sub-header">PERFORMING ARTISTES.</h2>
+                <img id="heading-underline" src="images/logos/stroke.png" alt="underline" class="underline">
                 <p>A quick look at the superstars storming your universes.</p>
+
+
             </div>
 
             <div id="top">
-                <div class="artiste-intro">
-                    <img src="./images/Wizkid.jpg" alt="Wizkid Performing on Stage">
+                <div class="artiste-intro relative">
+                    <!-- The Background effects -->
+                    <img src="./images/bg-dotted.png" alt="#" class="decor" id="wiz-decor">
+                    <div class="box-decor"></div>
+                    <!-- End -->
+
+                    <img src="./images/Wizkid.jpg" alt="Wizkid Performing on Stage" class="artiste-img">
                     <div class="description">
                         <h2 class="artiste-name">WIZKID</h2>
                         <p class="artiste-desc">
@@ -71,27 +83,38 @@
                         </p>
                     </div>
                 </div>
-        
-                <div class="artiste-intro">
-                    <img src="./images/playboi_carti.jpg" altPlayboi Carti Performing on Stage">
+
+                <div class="artiste-intro relative">
+                    <!-- The Background effects -->
+                    <img src="./images/bg-dotted.png" alt="#" class="decor" id="boi-decor">
+                    <div class="box-decor-R"></div>
+                    <!-- End -->
+
+                    <img src="./images/playboi_carti.jpg" alt="Playboi Carti Performing on Stage" class="artiste-img">
                     <div class="description">
                         <h2 class="artiste-name">PLAYBOI CARTI</h2>
                         <p class="artiste-desc">
-                            His statistics don't lie. Playboi Carti is a reknown rager and Vampire King. He is a gothic 
-                            stoic, numb to earthy feelings and he is out of this world. Insanely popular with his adlibs 
-                            that sound like entergalactic and makes him stand out from the rest. He is for sure one to look out for.
+                            His statistics don't lie. Playboi Carti is a reknown rager and Vampire King. He is a gothic
+                            stoic, numb to earthy feelings and he is out of this world. Insanely popular with his adlibs
+                            that sound like entergalactic and makes him stand out from the rest. He is for sure one to
+                            look out for.
                         </p>
                     </div>
                 </div>
-                
-                <div class="artiste-intro">
-                    <img src="./images/Travis.jpg" alt="Travis Scott Performing on Stage">
+
+                <div class="artiste-intro relative">
+                    <!-- The Background effects -->
+                    <div class="box-decor"></div>
+                    <!-- End -->
+
+                    <img src="./images/Travis.jpg" alt="Travis Scott Performing on Stage" class="artiste-img">
                     <div class="description">
                         <h2 class="artiste-name">TRAVIS SCOTT</h2>
                         <p class="artiste-desc">
                             Travis Scott is generally termed the leader of the stampede, the outlawz
-                            and he is a role model to a lot of multidiemensional youths. He leads with rage 
-                            and energy. Some call him the leader of lost souls. His album <span class="emphasis">Astroworld</span> 
+                            and he is a role model to a lot of multidiemensional youths. He leads with rage
+                            and energy. Some call him the leader of lost souls. His album <span
+                                class="emphasis">Astroworld</span>
                             is the most streamed album in the universe right now.
                         </p>
                     </div>
@@ -100,65 +123,84 @@
                     <a href="#">See more</a>
                 </div>
             </div>
-            
-            
+
+
             <div id="gallery">
                 <div id="heading">
                     <h2 class="sub-header">WORD FROM YE & GALLERY FROM PAST EVENTS.</h2>
                     <img id="gallery-underline" src="./images/logos/stroke.png" alt="underline">
                     <p>A brief glance on images and shots from YEEZUS szn 1.</p>
                 </div>
-                
-                <div class="artiste-intro">
+
+                <div class="artiste-intro relative">
+                    <!-- The Background effects -->
+                    <img src="./images/bg-dotted.png" alt="#" class="decor" id="ye-decor">
+                    <!-- End -->
+
                     <div class="description">
                         <h2 class="artiste-name">WORD FROM YE</h2>
                         <p>
-                            <blockquote class="artiste-desc">
-                                We are coming to your universe heavy. Its going to be an experience like 
-                                no other. Pack your bags, travel interdimensionally, bring your families and prepare to have the 
-                                time of your lives. Niggas will be in universes this time we are done with Paris and Earth is boring. 
-                                Huge shoutout to people that made it to szn 1.
-                            </blockquote>
+                        <blockquote class="artiste-desc">
+                            We are coming to your universe heavy. Its going to be an experience like
+                            no other. Pack your bags, travel interdimensionally, bring your families and prepare to have
+                            the
+                            time of your lives. Niggas will be in universes this time we are done with Paris and Earth
+                            is boring.
+                            Huge shoutout to people that made it to szn 1.
+                        </blockquote>
                         </p>
                     </div>
-                    <img src="./images/kanye_West.jpg" alt="Kanye West image">
+                    <img src="./images/kanye_West.jpg" alt="Kanye West image" class="artiste-img">
                 </div>
-    
+
                 <h2 class="artiste-name">GALLERY FROM SZN 1</h2>
                 <div id="gallery-imgs">
                     <div class="gallery-img">
                         <h4 class="serial-no">01</h4>
-                        <figure>
-                            <img src="./images/future_quavo_&_kanye.jpg" alt="Future, Quavo and Kanye selfie">
+                        <figure class="relative">
+                            <!-- The Background effects -->
+                            <img src="./images/bg-dotted.png" alt="#" class="decor" id="fut-qua-ye-decor">
+                            <!-- End -->
+
+                            <img src="./images/future_quavo_&_kanye.jpg" alt="Future, Quavo and Kanye">
                             <figcaption>Quavo, Future & YE.</figcaption>
                         </figure>
                     </div>
-    
+
                     <div class="gallery-img">
                         <h4 class="serial-no">02</h4>
-                        <figure>
+                        <figure class="relative">
+                            <!-- The Background effects -->
+                            <img src="./images/bg-dotted.png" alt="#" class="decor" id="dra-ye-decor">
+                            <!-- End -->
+
                             <img src="./images/drake_&_kanye.jpg" alt="Drake and Kanye photo">
                             <figcaption>Drake & YE.</figcaption>
                         </figure>
                     </div>
-    
+
                 </div>
-                
+
                 <div class="more">
                     <a href="#">See more</a>
                 </div>
-    
+
             </div>
-    
+
             <div id="merchandise">
                 <div id="heading">
                     <h2 class="sub-header">AVAILALABLE MERCHANDISE & VINYL.</h2>
                     <img id="gallery-underline" src="./images/logos/stroke.png" alt="underline">
                     <p>Are you a follower? Buy our product and join the army.</p>
                 </div>
-    
+
                 <div id="section-merchs">
-                    <figure id="merchs">
+                    <figure id="merchs" class="relative">
+                        <!-- The Background effects -->
+                        <img src="./images/bg-dotted.png" alt="#" class="decor" id="m-left-decor">
+                        <img src="./images/bg-dotted.png" alt="#" class="decor" id="m-right-decor">
+                        <!-- End -->
+
                         <img id="merch" src="./images/merch_1.png" alt="Yeezus shirt (front view & back view)">
                         <figcaption>
                             <h2 class="artiste-name">YEEZUS T-SHIRT</h2>
@@ -168,12 +210,17 @@
 
                     </figure>
                 </div>
-                
+
                 <div id="section-merchs">
                     <figure id="merchs">
-                        <div class="merch">
-                            <img src="./images/vinyl_rec.jpg" alt="YEEZUS Record">
-                            <img src="./images/vinyl_rec_platinum.jpg" alt="YEEZUS Record platinum">
+                        <div class="merch relative">
+                            <!-- The Background effects -->
+                            <img src="./images/bg-dotted.png" alt="#" class="decor" id="v-left-decor">
+                            <img src="./images/bg-dotted.png" alt="#" class="decor" id="v-right-decor">
+                            <!-- End -->
+
+                            <img src="./images/vinyl_rec.jpg" alt="YEEZUS Record" class="v-rec">
+                            <img src="./images/vinyl_rec_platinum.jpg" alt="YEEZUS Record platinum" class="v-rec-2">
                         </div>
                         <figcaption>
                             <h2 class="artiste-name">YEEZUS ALBUM VINYL</h2>
@@ -182,33 +229,35 @@
                         </figcaption>
                     </figure>
                 </div>
-    
+
                 <div class="more">
                     <a href="#">See more</a>
                 </div>
             </div>
             <div id="outro">
-                <h3 class="artiste-name">PRE-BOOK TICKETS VIA E-MAIL</h3>
+                <h3>PRE-BOOK TICKETS VIA E-MAIL</h3>
                 <p>
-                    Stay updated on our latest news concerning the concert, tickets<br/>prices and more information 
+                    Stay updated on our latest news concerning the concert, tickets<br />prices and more information
                     as they are made available with time.
                 </p>
                 <input type="email" name="email" id="email" placeholder="Enter your mail" required>
                 <input type="submit" value="GET TICKET" id="get-ticket">
             </div>
         </main>
-    
+
         <hr>
-    
+
         <footer>
             <div id="address">
                 <h1 id="logo">YZY</h1>
                 <address>No. 69, PLUTO AVENUE</address>
                 <address>YE@yeezus.com</address>
                 <ul id="icons">
-                    <li><a href="#"><img src="./images/logos/instagram-svg.svg" alt="instagram-logo" class="icon"></a></li>
+                    <li><a href="#"><img src="./images/logos/instagram-svg.svg" alt="instagram-logo" class="icon"></a>
+                    </li>
                     <li><a href="#"><img src="./images/logos/twitter-svg.svg" alt="twitter-logo" class="icon"></a></li>
-                    <li><a href="#"><img src="./images/logos/facebook-svg.svg" alt="facebook-logo" class="icon"></a></li>
+                    <li><a href="#"><img src="./images/logos/facebook-svg.svg" alt="facebook-logo" class="icon"></a>
+                    </li>
                 </ul>
             </div>
             <div id="footer-links">
@@ -224,4 +273,5 @@
 
     </div>
 </body>
+
 </html>
