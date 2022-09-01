@@ -15,11 +15,14 @@
     <div id="wrapper">
         <header>
             <div id="header-top">
-                <h1 id="logo"><a href="#">YZY</a></h1>
-                <ul class="nav-links">
+                <div id="btn-logo">
+                    <h1 id="logo"><a href="#">YZY</a></h1>
+                    <button id="menu-btn" onclick="displayMenu()">&#9776;</button>
+                </div>
+                <ul class="nav-links" id="menu">
                     <li><a href="./index.html" id="home">Home</a></li>
                     <li><a href="#">Artist</a></li>
-                    <li><a href="#">Blo g</a></li>
+                    <li><a href="#">Blog</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">About</a></li>
                 </ul>
@@ -56,10 +59,10 @@
 
             <div id="heading" class="relative">
                 <!-- The Background effects -->
-                <img src="./images/bg-dotted.png" alt="#" class="decor" id="perf-decor">
+                <img src="./images/bg-dotted.png" alt="#" class="decor desktop" id="perf-decor">
                 <!-- End -->
 
-                <h2 class="sub-header">PERFORMING ARTISTES.</h2>
+                <h2 class="sub-header">PERFORMING ARTISTES</h2>
                 <img id="heading-underline" src="images/logos/stroke.png" alt="underline" class="underline">
                 <p>A quick look at the superstars storming your universes.</p>
 
@@ -104,6 +107,7 @@
 
                 <div class="artiste-intro relative">
                     <!-- The Background effects -->
+                    <img src="./images/bg-dotted.png" alt="#" class="decor mobile" id="vis-decor">
                     <div class="box-decor"></div>
                     <!-- End -->
 
@@ -201,9 +205,15 @@
                         <img src="./images/bg-dotted.png" alt="#" class="decor" id="m-right-decor">
                         <!-- End -->
 
-                        <img id="merch" src="./images/merch_1.png" alt="Yeezus shirt (front view & back view)">
+                        <img id="merch" src="./images/merch_1.png" alt="Yeezus shirt (front view & back view)"
+                            class="desktop">
+                        <img id="merch" src="./images/front_view.png" alt="Yeezus shirt (front view & back view)"
+                            class="mobile">
+                        <img id="merch" src="./images/back_view.png" alt="Yeezus shirt (front view & back view)"
+                            class="mobile last">
+
                         <figcaption>
-                            <h2 class="artiste-name">YEEZUS T-SHIRT</h2>
+                            <h2 class="artiste-name" id="merch-name">YEEZUS T-SHIRT</h2>
                             <p class="price">$500</p>
                             <button id="shop-now">Shop now</button>
                         </figcaption>
@@ -223,7 +233,7 @@
                             <img src="./images/vinyl_rec_platinum.jpg" alt="YEEZUS Record platinum" class="v-rec-2">
                         </div>
                         <figcaption>
-                            <h2 class="artiste-name">YEEZUS ALBUM VINYL</h2>
+                            <h2 class="artiste-name" id="merch-name">YEEZUS ALBUM VINYL</h2>
                             <p class="price">$750</p>
                             <button id="shop-now">Shop now</button>
                         </figcaption>
@@ -272,6 +282,20 @@
 
 
     </div>
+
+
+    <script>
+        var menu = document.getElementById('menu');
+        var menuBtn = document.getElementById('menu-btn');
+
+        function displayMenu() {
+            if (menu.style.display === 'none') {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 
 </html>

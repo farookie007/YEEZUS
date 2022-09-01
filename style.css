@@ -33,8 +33,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-  /* border: 1px dotted white; */
 }
 
 html {
@@ -57,11 +55,19 @@ body {
   position: relative;
   z-index: -111;
 }
+.mobile {
+  display: none;
+  width: 100%;
+}
 #logo,
 #header-middle > *,
 .sub-header,
 .artiste-name {
   text-transform: uppercase;
+}
+#menu-btn,
+#menu-btn-x {
+  display: none;
 }
 
 /* Background Effects */
@@ -106,7 +112,6 @@ body {
   z-index: -1;
 }
 
-
 .relative {
   position: relative;
 }
@@ -143,7 +148,7 @@ body {
 }
 #m-right-decor {
   right: 4rem;
-  top: 19.4rem;
+  top: 19.08rem;
   width: 19.833333333333332rem;
 }
 #v-left-decor {
@@ -220,6 +225,13 @@ a:hover {
 }
 #header-top a {
   color: var(--font-color);
+}
+#btn-logo {
+  display: flex;
+  flex-direction: row;
+  width: 83.66822429906543%;
+  margin: auto;
+  justify-content: space-between;
 }
 
 #logo {
@@ -431,6 +443,9 @@ blockquote::after {
   line-height: 2.3333333333333335rem;
   letter-spacing: 0.2em;
   transform: scale(1, 0.8);
+}
+.no-display {
+  display: none;
 }
 
 .artiste-name {
@@ -653,5 +668,512 @@ footer .icon {
   }
   #wrapper {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 3.7383177570093453vw;
+  }
+  #wrapper {
+    width: 100%;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  /* Background Effects */
+
+  .decor {
+    position: absolute;
+    height: 16.16875rem;
+    width: 21.306875rem;
+    border-width: 0;
+    z-index: -1;
+  }
+  .box-decor {
+    position: absolute;
+    top: -1rem;
+    left: 14rem;
+    width: 9.5775rem;
+    height: 9.5775rem;
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(
+        180deg,
+        rgba(120, 85, 44, 0.4) 0%,
+        rgba(192, 192, 192, 0.4) 100%
+      )
+      1;
+    z-index: -1;
+  }
+  .box-decor-R {
+    position: absolute;
+    top: -1rem;
+    right: 2rem;
+    width: 9.5775rem;
+    height: 9.5775rem;
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(
+        180deg,
+        rgba(120, 85, 44, 0.4) 0%,
+        rgba(192, 192, 192, 0.4) 100%
+      )
+      1;
+    z-index: -1;
+  }
+
+  .relative {
+    position: relative;
+  }
+
+  #wiz-decor,
+  #boi-decor {
+    left: 1.76rem;
+    top: 13.54375rem;
+  }
+  #vis-decor {
+    left: 1.76rem;
+    top: 18.4375rem;
+  }
+
+  #ye-decor {
+    left: 1.76rem;
+    top: -1rem;
+  }
+  #fut-qua-ye-decor {
+    width: 21.490625rem;
+    top: -1rem;
+    left: -3rem;
+  }
+  #dra-ye-decor {
+    width: 21.490625rem;
+    top: -1rem;
+    right: -3rem;
+  }
+
+  #m-left-decor {
+    left: 2.5rem;
+    top: 6rem;
+    width: 19.833333333333332rem;
+  }
+  #m-right-decor {
+    left: 2.5rem;
+    top: 47.4rem;
+    width: 19.833333333333332rem;
+  }
+  #v-left-decor {
+    left: 1.8rem;
+    top: 34rem;
+    height: 13.166666666666666rem;
+    width: 21.833333333333332rem;
+  }
+  #v-right-decor {
+    right: 2rem;
+    top: -2rem;
+    height: 13.166666666666666rem;
+    width: 21.833333333333332rem;
+  }
+
+  /* End of background effects */
+
+  #menu-btn {
+    display: block;
+    width: 1.1375rem;
+    height: 0.8125rem;
+    background-color: hsla(0, 0%, 100%, 0);
+    border-width: 0;
+    color: white;
+    transform: scale(2.5, 1.5);
+  }
+  #btn-logo {
+    margin-bottom: 1.3rem;
+  }
+  #menu {
+    display: none;
+    position: static;
+    flex-direction: column;
+    width: 100%;
+    background-color: hsla(0, 0%, 0%, 0.7);
+    padding-left: 1rem;
+    font-size: 1rem;
+    border-top: 1px solid white;
+  }
+  #menu li {
+    display: block;
+    padding: 1.2rem;
+    /* border-bottom: 1px solid var(--dark-brown); */
+  }
+
+  header {
+    background-image: url("./images/background_img.jpg");
+    width: 100%;
+    height: 100.125rem;
+    background-size: cover;
+    background-position: -28.7rem 0;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    padding: 0;
+    position: relative;
+  }
+  .icon {
+    /* height: 1.5513333333333332rem; */
+    height: 1.691875rem;
+    width: 1.0375rem;
+  }
+  #header-top {
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    font-size: 0.5rem;
+    height: fit-content;
+    padding: 1.5rem 0 0;
+  }
+  #header-middle {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-links {
+    --font-fam: "Nunito Sans";
+    font-family: var(--font-fam, sans-serif);
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    letter-spacing: normal;
+    font-size: 0.5333333333333333rem;
+    line-height: 0.7273333333333334rem;
+  }
+  .nav-links a:active {
+    color: var(--active-color);
+  }
+
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  #header-top a {
+    color: var(--font-color);
+  }
+
+  #logo {
+    --font-fam: serif;
+    font-family: var(--font-fam);
+    font-weight: 700;
+    transform: scale(0.8, 2);
+    line-height: 2rem;
+  }
+  hr {
+    height: 1px;
+    background-image: linear-gradient(
+      90deg,
+      hsla(0, 5%, 77%, 0.5) -0.81%,
+      hsla(32, 100%, 50%, 0.65) 54.63%
+    );
+    border-width: 0;
+  }
+
+  #intro {
+    width: 22.25rem;
+  }
+  .more {
+    margin-top: 1.875rem;
+    margin-bottom: 6.25rem;
+  }
+  .more a {
+    font-size: 1rem;
+    line-height: 1.0625rem;
+  }
+
+  #yeezus {
+    font-size: 4.96226875rem;
+    line-height: 5.9375rem;
+  }
+  #born-again {
+    font-size: 2.8871375rem;
+    line-height: 3.4375rem;
+    margin: 0.670625rem 0;
+  }
+  #szn-2 {
+    font-size: 1.6240125rem;
+    line-height: 1.9375rem;
+  }
+  #get-ticket {
+    font-size: 1.48868125rem;
+    line-height: 1.8125rem;
+    height: 4.330625rem;
+    width: 11.954375rem;
+    margin-top: 2.8125rem;
+    margin-bottom: 3.035rem;
+    border-radius: 1.35334375rem;
+  }
+
+  #planets {
+    justify-content: space-between;
+  }
+  #planets li {
+    font-size: 1.22135625rem;
+    line-height: 1.4375rem;
+  }
+  .emphasis {
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+  }
+
+  #header-bottom {
+    text-align: center;
+    position: absolute;
+    bottom: 2.92875rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #header-bottom p {
+    font-size: 1rem;
+    line-height: 1.375rem;
+    letter-spacing: 0.3px;
+  }
+  #header-bottom .underline {
+    width: 20.6875rem;
+    height: 0.9375rem;
+  }
+
+  #brands {
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+  }
+  #brands img {
+    height: 12rem;
+    width: auto;
+    margin: 1rem 0;
+  }
+  main {
+    padding: 0;
+  }
+
+  .sub-header {
+    font-size: 1.5rem;
+    line-height: 1.8125rem;
+  }
+  #heading-underline {
+    width: 20.6875rem;
+    height: 0.9375rem;
+  }
+
+  #gallery-underline {
+    width: 20.6875rem;
+    height: 0.9375rem;
+  }
+
+  .sub-header + img + p {
+    font-size: 1rem;
+    line-height: 1.875rem;
+  }
+
+  #gallery .artiste-intro {
+    flex-direction: column-reverse;
+    margin: 4.574375rem 0 6.25rem;
+  }
+  #gallery .artiste-img {
+    height: 22.264375rem;
+    width: 18.4375rem;
+    margin-top: 0;
+  }
+
+  .artiste-intro {
+    flex-direction: column;
+    margin: 4.46125rem auto 7.594375rem;
+    width: 25.5rem;
+  }
+  .artiste-intro:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .artiste-intro .artiste-img {
+    width: 18.496875rem;
+    margin: auto;
+  }
+  .description {
+    width: 100%;
+    margin: auto;
+  }
+  .artiste-desc {
+    width: 100%;
+    line-height: 2.5rem;
+    letter-spacing: 0.15em;
+    transform: scale(1, 0.8);
+  }
+
+  .artiste-name {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-bottom: 0.625rem;
+    margin-top: 2.72rem;
+  }
+  .artiste-name::before {
+    content: "|";
+    color: var(--dark-brown);
+  }
+
+  #gallery-imgs {
+    flex-direction: column;
+    margin-top: 4.37625rem;
+  }
+  .gallery-img {
+    margin: 0 auto 4.658125rem;
+  }
+  .gallery-img:last-of-type {
+    margin-bottom: 0;
+  }
+  .serial-no {
+    font-size: 1.3877625rem;
+    line-height: 1.6875rem;
+  }
+
+  figure img {
+    width: 17.625rem;
+    height: 22rem;
+  }
+
+  figcaption {
+    font-size: 1.355225rem;
+    width: 16.60125rem;
+    margin: 1.25rem auto 0;
+  }
+
+  .merch {
+    flex-direction: column;
+    width: 100%;
+    margin: 9.375rem auto 0;
+  }
+  .merch img {
+    width: 20.375rem;
+    height: 20.375rem;
+    margin: 0 auto 4.126875rem;
+  }
+  .price,
+  #merch-name {
+    font-size: 2.5rem;
+    width: 25.75rem;
+    line-height: 3rem;
+    letter-spacing: 0.15em;
+  }
+  .price {
+    margin-bottom: 2rem;
+  }
+
+  #merchs button {
+    line-height: 1.1875rem;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  #merch {
+    border-width: 0;
+  }
+  #merchs figcaption {
+    margin: 0 auto;
+    width: fit-content;
+  }
+  .no-display {
+    display: block;
+  }
+
+  #merch.last {
+    margin-top: -8rem;
+  }
+
+  img#merch {
+    width: 100%;
+    height: auto;
+  }
+  figure .artiste-name:before,
+  #outro .artiste-name:before {
+    content: "";
+  }
+
+  #outro {
+    padding: 2.086875rem 0;
+    width: 24.875rem;
+    /* to make the pentagon shaped div */
+    clip-path: polygon(0% 0%, 0% 90%, 50% 100%, 100% 90%, 100% 0%);
+  }
+  #outro h3 {
+    font-size: 1.2273875rem;
+    line-height: 1.5rem;
+  }
+
+  #outro p {
+    font-size: 0.531866875rem;
+    line-height: 0.8125rem;
+    letter-spacing: 1px;
+    margin-top: 0.204375rem;
+    margin-bottom: 0.451875rem;
+  }
+
+  #outro #get-ticket {
+    font-size: 0.606281875rem;
+    margin-top: 0.605625rem;
+    height: 1.76375rem;
+    width: 4.86875rem;
+    border-radius: 3px;
+  }
+  input#email {
+    font-size: 0.49095375rem;
+    padding-left: 1rem;
+    width: 18.860625rem;
+    height: 1.8075rem;
+  }
+  main + hr {
+    margin: 6.25rem auto;
+  }
+
+  footer {
+    padding: 0 2rem 1.690625rem;
+    margin: auto;
+    justify-content: space-between;
+  }
+
+  #address {
+    width: 4rem;
+  }
+  #address > * {
+    margin: 0.414375rem 0 0;
+  }
+  footer #logo {
+    /* height: 4.501rem; */
+    height: fit-content;
+    width: fit-content;
+    transform: scale(1, 2);
+    /* padding: 0; */
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  address {
+    font-size: 0.398125rem;
+    letter-spacing: 0em;
+    line-height: 0.663125rem;
+  }
+
+  #footer-links {
+    width: 75%;
+  }
+  #footer-links a {
+    font-size: 0.398125rem;
+    line-height: 0.4775rem;
+  }
+  hr {
+    height: 2px;
   }
 }
