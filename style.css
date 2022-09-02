@@ -805,7 +805,7 @@ footer .icon {
     position: static;
     flex-direction: column;
     width: 100%;
-    background-color: hsla(0, 0%, 0%, 0.7);
+    background-color: hsla(0, 0%, 0%, 0.5);
     padding-left: 1rem;
     font-size: 1rem;
     border-top: 1px solid white;
