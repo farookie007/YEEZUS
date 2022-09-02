@@ -202,6 +202,7 @@ li {
   display: flex;
   justify-content: end;
   width: 100%;
+  float: right;
 }
 .nav-links {
   --font-fam: "Nunito Sans";
@@ -329,7 +330,8 @@ hr {
   letter-spacing: 0.155em;
 }
 .emphasis {
-  font-style: italic;
+  /* font-style: italic; */
+  color: var(--font-color);
   text-decoration: underline;
   text-decoration-style: dotted;
 }
